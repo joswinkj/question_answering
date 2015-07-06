@@ -23,8 +23,8 @@ from textProcessing import changeToMatrix
 from rake import Rake
 from evaluatingResults import EvaluateResults
 
-def runMainCode(query='how many people are there in india',loc='india.txt.pickle'):
-    process_data = changeToMatrix(indexed_data=1)
+def runMainCode(query='how many people are there in india',loc='data_file.txt'):
+    process_data = changeToMatrix(indexed_data=0)
     sentences,data_processed,query_processed=process_data.get_processed_data(query,loc)#data_processed and query_processed are lists
     print 'evaluating results'
     result_ind_nouns,res_nouns = EvaluateResults(data_processed[0],query_processed[0]).getCosineSimilarity(10)
