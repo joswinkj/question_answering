@@ -9,4 +9,4 @@ python Main.py query file
 
 Eg: python Main.py 'what is the population of India' 'data_file.txt'
 
-python sample_qa.py 'how much percentage of oil consumed is imported in US'
+python Main.py 'how much percentage of oil consumed is imported in US' 'data_file.txt'
